@@ -16,7 +16,7 @@ namespace CustomDeathMessages
         //Mod Details
         private const string modGUID = "Distance.CustomDeathMessages";
         private const string modName = "Custom Death Messages";
-        private const string modVersion = "1.0.0";
+        private const string modVersion = "1.0.1";
 
         //Config Entry Strings
 
@@ -41,8 +41,6 @@ namespace CustomDeathMessages
             Logger.LogInfo("Thanks for using Custom Death Messages");
 
             LoadMessages();
-
-            SaveMessages();
 
             //Apply Patches
             Logger.LogInfo("Loading...");
@@ -101,6 +99,7 @@ namespace CustomDeathMessages
             {
                 Log.LogWarning("CustomDeathMessages.json doesn't exist. Using Defaults, generating a new file");
                 AddDefaultsToDicationary();
+                SaveMessages();
             }
         }
 
@@ -167,7 +166,7 @@ namespace CustomDeathMessages
 
             string[] NotReady = new string[]
                             {
-                                "{0} is a little busy, try agains later"
+                                "{0} is a little busy, try again later"
                             };
             MessagesDictionary.Add("NotReady", NotReady);
 

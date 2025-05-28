@@ -38,7 +38,7 @@ Do note that you'll have to edit the json file yourself to add more messages. Wh
 		"[FFFFFF]{0}[-] [00FF00]f[-][00FFFF]i[-][0000FF]n[-][FF00FF]i[-][FF0000]s[-][FFFF00]h[-][00FF00]e[-][00FFFF]d[-]"
 	],
 	"NotReady" : [
-		"{0} is a little busy, try agains later"
+		"{0} is a little busy, try again later"
 	],
 	"Spectate" : [
 		"[-]This map is too hard, {0} gave up"
